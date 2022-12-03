@@ -35,7 +35,7 @@ resource "aws_default_security_group" "default_sec_group" {
 # Creating a key-pair resource
 resource "aws_key_pair" "test_ssh_key" {
   key_name   = "testing_ssh_key"
-  #public_key = file("/home/cking/.ssh/cteam_rsa.pub")
+  public_key = file("/home/cking/.ssh/cteam_rsa.pub")
 
 
 }
